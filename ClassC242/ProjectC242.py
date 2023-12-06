@@ -71,10 +71,10 @@ print('Number of blocks in blockchain: ', number_of_blocks)
 # Write Task 02 code from below
 print('previous hashcode of genesis block: ', blockchain.chain[0]['previous_hash'])
 print('current hashcode of genesis block: ', blockchain.chain[0]['Current_hash'])
-print('previous hashcode of first block: ', blockchain.chain[1]['previous_hash'])
+print('previous hashcode of first block: ', blockchain.chain[0]['previous_hash'])
 
 # Write Task 03 code from below
-if blockchain.chain[0]['Current_hash'] == blockchain.chain[1]['previous_hash']:
+if blockchain.chain[0]['Current_hash'] == blockchain.chain[0]['previous_hash']:
     print('Transaction is verified')
 
 else:
